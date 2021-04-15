@@ -7,10 +7,9 @@ function printNumbers() {
 }
 
 //Gets the range of numbers
-function getRange(start, end) {
+function getRange() {
     let numberArray = [];
-    for (let index = start; index <= end; index++) {
-        //fizzbuzz things here
+    for (let index = 1; index <= 100; index++) {
         numberArray.push(index);
     }
 
@@ -20,6 +19,8 @@ function getRange(start, end) {
 //display the numbers on the page
 //
 function displayData(numbers) {
+    let num1 = parseInt(document.getElementById("num1").value);
+    let num2 = parseInt(document.getElementById("num2").value);
     const rowTemplate = document.getElementById("dataTemplate");
     const resultsBody = document.getElementById("resultsBody");
     let colCount = rowTemplate.content.cloneNode(true).querySelectorAll("td").length;
@@ -36,20 +37,22 @@ function displayData(numbers) {
         //loop over columns
         for (let colIndex = 0; colIndex < cols.length; colIndex++) {
             let value = numbers[i + colIndex];
+
+            //FIZZBUZZ
             if (typeof value === "undefined") {
                 value = "";
-            } else if (value % 15 == 0) {
-                cols[colIndex].textContent = "Fizz"
-                cols[colIndex].classList.add("boldIt");
-            } else if (value % 5 == 0) {
-                cols[colIndex].textContent = "Buzz"
-                cols[colIndex].classList.add("boldIt");
-            } else if (value % 3 == 0) {
-                cols[colIndex].textContent = "FizzBuzz"
-                cols[colIndex].classList.add("boldIt");
-            } else {
-                cols[colIndex].textContent = value;
+            } else if (value % num1 == 0 && value % num2 == 0) {
+                value = "Fizzbuzz"
+                cols[colIndex].classList.add("fizzbuzzStyle");
+            } else if (value % num1 == 0) {
+                value = "Fizz"
+                cols[colIndex].classList.add("fizzStyle");
+            } else if (value % num2 == 0) {
+                value = "Buzz"
+                cols[colIndex].classList.add("buzzStyle");
             }
+            cols[colIndex].textContent = value;
+
         }
         // add the row to the page
         resultsBody.appendChild(dataRow);

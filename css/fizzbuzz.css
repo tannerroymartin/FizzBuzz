@@ -41,10 +41,20 @@ body {
 
 
 
-.boldIt {
+.fizzStyle {
   font-weight: bolder;
   color: #49F58C;
   text-decoration: dashed;
+}
+
+.buzzStyle {
+  font-weight: bolder;
+  color: #DE1D50;
+}
+
+.fizzbuzzStyle {
+  font-weight: bolder;
+  color: #910026;
 }
 
 .theadColor {
