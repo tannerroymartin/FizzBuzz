@@ -1,0 +1,143 @@
+<!-- <!doctype html> -->
+<html lang="en">
+
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--Custom CSS for all challenges-->
+        <link rel="stylesheet" href="/css/fizzbuzz.css">
+        <!-- <link rel="stylesheet" href="/css/soaf.css">
+    <link rel="stylesheet" href="/css/sunset.css">
+    <link rel="stylesheet" href="/css/superdog.css">
+    <link rel="stylesheet" href="/css/tacocat.css">
+    <link rel="stylesheet" href="/css/mystery.css"> -->
+    </head>
+
+    <body>
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand-md navbar-light fixed-top">
+                <a class="navbar-brand" href="#">Fizz Buzz</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/app.html">The App<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/code.html">See The Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--GitHub link here-->
+                            <a class="nav-link" href="#">Get The Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://eloquent-poincare-c5d960.netlify.app/">My Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Begin page content -->
+        <div class="jumbotron jumbotron-fluid header">
+            <div class="hero container">
+                <div>
+                    <h1>Example Two</h1>
+                    <h4>Learning about Javascript</h4>
+                </div>
+
+            </div>
+        </div>
+        <main role="main" class="container">
+            <div class="container">
+                <h1>Enter 2 numbers and Do math</h1>
+                <hr>
+                <form>
+                    <div class="form-row">
+                        <div class="col-auto">
+                            <label>Enter A number:</label>
+                            <input type="number" id="num1" value="">
+                        </div>
+                        <div class="col-auto">
+                            <label>Enter Another Number:</label>
+                            <input type="number" id="num2" value="">
+                        </div>
+                        <!-- <div class="col-auto">
+                            <label>Enter A Fizz Number</label>
+                            <input type="number" id="fizzNum" value="">
+                        </div>
+                        <div class="col-auto">
+                            <label>Enter A Buzz:</label>
+                            <input type="number" id="buzzNum" value="">
+                        </div> -->
+                        <div class="col text-right">
+                            <button type="button" class="btn btn-primary" id="submitBtn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+                <table class="table table-striped" id="resultTable">
+                    <thead class="theadColor">
+                        <tr>
+                            <th colspan="5" class="text-white">Results</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+        <footer class="footer footer-color">
+            <div class="container">
+                <span class="text-muted-alt">&copy; <a href=""></a> Tanner Roy Martin 2021</span>
+            </div>
+
+        </footer>
+        <!-- Hidden from browser -->
+        <template id="dataTemplate">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </template>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <!--Sweet Alert CDN-->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="/js/site.js"></script>
+        <script>
+            document.getElementById("submitBtn").addEventListener("click", printNumbers)
+        </script>
+    </body>
+
+</html>

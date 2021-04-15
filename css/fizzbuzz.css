@@ -1,0 +1,65 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #fffc00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #fffc00);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #fffc00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  color: #49F58C;
+  font-family: Verdana, Tahoma, sans-serif;
+  padding-top: 60px;
+
+
+}
+
+.container-fluid {
+  padding: 20px;
+
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.header {
+  background: #2c3e50;
+}
+
+
+
+.boldIt {
+  font-weight: bolder;
+  color: #49F58C;
+  text-decoration: dashed;
+}
+
+.theadColor {
+  background: #4D7FFF;
+}
+
+nav {
+  background-color: #49F58C;
+}
+
+.jumbotron {
+  background-color: #4D7FFF;
+}
+
+.mainImg {
+  height: 350px;
+  width: 350px;
+}
