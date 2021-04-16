@@ -20,7 +20,7 @@ body {
 }
 
 .container-fluid {
-  padding: 20px;
+  padding: 30px;
 
 }
 
@@ -73,3 +73,14 @@ nav {
   height: 350px;
   width: 350px;
 }
+
+p>img {
+  max-width: 20%;
+  max-height: auto;
+}
+
+.fizzbuzzBottle {
+  max-height: auto;
+  max-width: 50%;
+}
+

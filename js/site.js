@@ -19,6 +19,7 @@ function getRange() {
 //display the numbers on the page
 //
 function displayData(numbers) {
+    //let num1 & num2 fixed FIZZBUZZ section!!
     let num1 = parseInt(document.getElementById("num1").value);
     let num2 = parseInt(document.getElementById("num2").value);
     const rowTemplate = document.getElementById("dataTemplate");
@@ -58,4 +59,3 @@ function displayData(numbers) {
         resultsBody.appendChild(dataRow);
     }
 }
-//Note: td's use textContent to set content
