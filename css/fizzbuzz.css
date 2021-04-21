@@ -87,3 +87,8 @@ p>img {
 .devicons {
   font-size: 75px;
 }
+
+a:link,
+a:hover {
+  color: white;
+}
